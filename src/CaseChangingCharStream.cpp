@@ -46,7 +46,15 @@ size_t CaseChangingCharStream::LA(ssize_t i)
     {
         return c;
     }
+#ifdef _WIN64
+    if (upper)
+    {
+        return size_t(toupper(int(c)));
+    }
 
+    return size_t(tolower(int(c)));
+#endif
+#ifndef _WIN64
     char o = char(c);
 
     if (upper)
@@ -55,6 +63,7 @@ size_t CaseChangingCharStream::LA(ssize_t i)
     }
 
     return size_t(tolower(o));
+#endif
 }
 
 ssize_t CaseChangingCharStream::mark()
