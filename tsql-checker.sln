@@ -5,22 +5,48 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsql-checker", "tsql-checker.vcxproj", "{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsql-checker-linux", "tsql-checker-linux.vcxproj", "{762A4809-E67C-47E3-A400-66925254E7CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|ARM.ActiveCfg = Debug|Win32
+		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|ARM64.ActiveCfg = Debug|Win32
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|x64.ActiveCfg = Debug|x64
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|x64.Build.0 = Debug|x64
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|x86.ActiveCfg = Debug|Win32
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Debug|x86.Build.0 = Debug|Win32
+		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|ARM.ActiveCfg = Release|Win32
+		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|ARM64.ActiveCfg = Release|Win32
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|x64.ActiveCfg = Release|x64
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|x64.Build.0 = Release|x64
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|x86.ActiveCfg = Release|Win32
 		{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}.Release|x86.Build.0 = Release|Win32
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|ARM.ActiveCfg = Debug|ARM
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|ARM.Build.0 = Debug|ARM
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|ARM64.Build.0 = Debug|ARM64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|x64.ActiveCfg = Debug|x64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|x64.Build.0 = Debug|x64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|x86.ActiveCfg = Debug|x86
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Debug|x86.Build.0 = Debug|x86
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|ARM.ActiveCfg = Release|ARM
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|ARM.Build.0 = Release|ARM
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|ARM64.ActiveCfg = Release|ARM64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|ARM64.Build.0 = Release|ARM64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|x64.ActiveCfg = Release|x64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|x64.Build.0 = Release|x64
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|x86.ActiveCfg = Release|x86
+		{762A4809-E67C-47E3-A400-66925254E7CC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

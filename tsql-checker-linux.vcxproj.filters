@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1c85510a-0a39-4bdb-a328-cee44a7f0089}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CaseChangingCharStream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tsql-checker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TSqlLexer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TSqlParser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CaseChangingCharStream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TSqlLexer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TSqlParser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -4,7 +4,7 @@ This program, for a given Transact-SQL file, outputs tokens and elements of T-SQ
 
 ## Binaries
 
-Download from [releases](https://github.com/andre-wojtowicz/tsql-checker/releases).
+Windows and Linux binaries can be downloaded from [releases](https://github.com/andre-wojtowicz/tsql-checker/releases).
 
 ## Usage
 

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CaseChangingCharStream.cpp" />
+    <ClCompile Include="src\tsql-checker.cpp" />
+    <ClCompile Include="src\TSqlLexer.cpp" />
+    <ClCompile Include="src\TSqlParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CaseChangingCharStream.h" />
+    <ClInclude Include="src\TSqlLexer.h" />
+    <ClInclude Include="src\TSqlParser.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{762a4809-e67c-47e3-a400-66925254e7cc}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>tsql_checker_linux</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>
+    </IncludePath>
+    <AdditionalSourcesToCopyMapping>lib/libantlr4-runtime.a;antlr-src/antlr4-common.h;antlr-src/antlr4-runtime.h;antlr-src/ANTLRErrorListener.cpp;antlr-src/ANTLRErrorListener.h;antlr-src/ANTLRErrorStrategy.cpp;antlr-src/ANTLRErrorStrategy.h;antlr-src/ANTLRFileStream.cpp;antlr-src/ANTLRFileStream.h;antlr-src/ANTLRInputStream.cpp;antlr-src/ANTLRInputStream.h;antlr-src/BailErrorStrategy.cpp;antlr-src/BailErrorStrategy.h;antlr-src/BaseErrorListener.cpp;antlr-src/BaseErrorListener.h;antlr-src/BufferedTokenStream.cpp;antlr-src/BufferedTokenStream.h;antlr-src/CharStream.cpp;antlr-src/CharStream.h;antlr-src/CommonToken.cpp;antlr-src/CommonToken.h;antlr-src/CommonTokenFactory.cpp;antlr-src/CommonTokenFactory.h;antlr-src/CommonTokenStream.cpp;antlr-src/CommonTokenStream.h;antlr-src/ConsoleErrorListener.cpp;antlr-src/ConsoleErrorListener.h;antlr-src/DefaultErrorStrategy.cpp;antlr-src/DefaultErrorStrategy.h;antlr-src/DiagnosticErrorListener.cpp;antlr-src/DiagnosticErrorListener.h;antlr-src/Exceptions.cpp;antlr-src/Exceptions.h;antlr-src/FailedPredicateException.cpp;antlr-src/FailedPredicateException.h;antlr-src/InputMismatchException.cpp;antlr-src/InputMismatchException.h;antlr-src/InterpreterRuleContext.cpp;antlr-src/InterpreterRuleContext.h;antlr-src/IntStream.cpp;antlr-src/IntStream.h;antlr-src/Lexer.cpp;antlr-src/Lexer.h;antlr-src/LexerInterpreter.cpp;antlr-src/LexerInterpreter.h;antlr-src/LexerNoViableAltException.cpp;antlr-src/LexerNoViableAltException.h;antlr-src/ListTokenSource.cpp;antlr-src/ListTokenSource.h;antlr-src/NoViableAltException.cpp;antlr-src/NoViableAltException.h;antlr-src/Parser.cpp;antlr-src/Parser.h;antlr-src/ParserInterpreter.cpp;antlr-src/ParserInterpreter.h;antlr-src/ParserRuleContext.cpp;antlr-src/ParserRuleContext.h;antlr-src/ProxyErrorListener.cpp;antlr-src/ProxyErrorListener.h;antlr-src/RecognitionException.cpp;antlr-src/RecognitionException.h;antlr-src/Recognizer.cpp;antlr-src/Recognizer.h;antlr-src/RuleContext.cpp;antlr-src/RuleContext.h;antlr-src/RuleContextWithAltNum.cpp;antlr-src/RuleContextWithAltNum.h;antlr-src/RuntimeMetaData.cpp;antlr-src/RuntimeMetaData.h;antlr-src/Token.cpp;antlr-src/Token.h;antlr-src/TokenFactory.h;antlr-src/TokenSource.cpp;antlr-src/TokenSource.h;antlr-src/TokenStream.cpp;antlr-src/TokenStream.h;antlr-src/TokenStreamRewriter.cpp;antlr-src/TokenStreamRewriter.h;antlr-src/UnbufferedCharStream.cpp;antlr-src/UnbufferedCharStream.h;antlr-src/UnbufferedTokenStream.cpp;antlr-src/UnbufferedTokenStream.h;antlr-src/Vocabulary.cpp;antlr-src/Vocabulary.h;antlr-src/WritableToken.cpp;antlr-src/WritableToken.h;antlr-src/atn/AbstractPredicateTransition.cpp;antlr-src/atn/AbstractPredicateTransition.h;antlr-src/atn/ActionTransition.cpp;antlr-src/atn/ActionTransition.h;antlr-src/atn/AmbiguityInfo.cpp;antlr-src/atn/AmbiguityInfo.h;antlr-src/atn/ArrayPredictionContext.cpp;antlr-src/atn/ArrayPredictionContext.h;antlr-src/atn/ATN.cpp;antlr-src/atn/ATN.h;antlr-src/atn/ATNConfig.cpp;antlr-src/atn/ATNConfig.h;antlr-src/atn/ATNConfigSet.cpp;antlr-src/atn/ATNConfigSet.h;antlr-src/atn/ATNDeserializationOptions.cpp;antlr-src/atn/ATNDeserializationOptions.h;antlr-src/atn/ATNDeserializer.cpp;antlr-src/atn/ATNDeserializer.h;antlr-src/atn/ATNSerializer.cpp;antlr-src/atn/ATNSerializer.h;antlr-src/atn/ATNSimulator.cpp;antlr-src/atn/ATNSimulator.h;antlr-src/atn/ATNState.cpp;antlr-src/atn/ATNState.h;antlr-src/atn/ATNType.h;antlr-src/atn/AtomTransition.cpp;antlr-src/atn/AtomTransition.h;antlr-src/atn/BasicBlockStartState.cpp;antlr-src/atn/BasicBlockStartState.h;antlr-src/atn/BasicState.cpp;antlr-src/atn/BasicState.h;antlr-src/atn/BlockEndState.cpp;antlr-src/atn/BlockEndState.h;antlr-src/atn/BlockStartState.cpp;antlr-src/atn/BlockStartState.h;antlr-src/atn/ContextSensitivityInfo.cpp;antlr-src/atn/ContextSensitivityInfo.h;antlr-src/atn/DecisionEventInfo.cpp;antlr-src/atn/DecisionEventInfo.h;antlr-src/atn/DecisionInfo.cpp;antlr-src/atn/DecisionInfo.h;antlr-src/atn/DecisionState.cpp;antlr-src/atn/DecisionState.h;antlr-src/atn/EmptyPredictionContext.cpp;antlr-src/atn/EmptyPredictionContext.h;antlr-src/atn/EpsilonTransition.cpp;antlr-src/atn/EpsilonTransition.h;antlr-src/atn/ErrorInfo.cpp;antlr-src/atn/ErrorInfo.h;antlr-src/atn/LexerAction.cpp;antlr-src/atn/LexerAction.h;antlr-src/atn/LexerActionExecutor.cpp;antlr-src/atn/LexerActionExecutor.h;antlr-src/atn/LexerActionType.h;antlr-src/atn/LexerATNConfig.cpp;antlr-src/atn/LexerATNConfig.h;antlr-src/atn/LexerATNSimulator.cpp;antlr-src/atn/LexerATNSimulator.h;antlr-src/atn/LexerChannelAction.cpp;antlr-src/atn/LexerChannelAction.h;antlr-src/atn/LexerCustomAction.cpp;antlr-src/atn/LexerCustomAction.h;antlr-src/atn/LexerIndexedCustomAction.cpp;antlr-src/atn/LexerIndexedCustomAction.h;antlr-src/atn/LexerModeAction.cpp;antlr-src/atn/LexerModeAction.h;antlr-src/atn/LexerMoreAction.cpp;antlr-src/atn/LexerMoreAction.h;antlr-src/atn/LexerPopModeAction.cpp;antlr-src/atn/LexerPopModeAction.h;antlr-src/atn/LexerPushModeAction.cpp;antlr-src/atn/LexerPushModeAction.h;antlr-src/atn/LexerSkipAction.cpp;antlr-src/atn/LexerSkipAction.h;antlr-src/atn/LexerTypeAction.cpp;antlr-src/atn/LexerTypeAction.h;antlr-src/atn/LL1Analyzer.cpp;antlr-src/atn/LL1Analyzer.h;antlr-src/atn/LookaheadEventInfo.cpp;antlr-src/atn/LookaheadEventInfo.h;antlr-src/atn/LoopEndState.cpp;antlr-src/atn/LoopEndState.h;antlr-src/atn/Makefile;antlr-src/atn/NotSetTransition.cpp;antlr-src/atn/NotSetTransition.h;antlr-src/atn/OrderedATNConfigSet.cpp;antlr-src/atn/OrderedATNConfigSet.h;antlr-src/atn/ParseInfo.cpp;antlr-src/atn/ParseInfo.h;antlr-src/atn/ParserATNSimulator.cpp;antlr-src/atn/ParserATNSimulator.h;antlr-src/atn/PlusBlockStartState.cpp;antlr-src/atn/PlusBlockStartState.h;antlr-src/atn/PlusLoopbackState.cpp;antlr-src/atn/PlusLoopbackState.h;antlr-src/atn/PrecedencePredicateTransition.cpp;antlr-src/atn/PrecedencePredicateTransition.h;antlr-src/atn/PredicateEvalInfo.cpp;antlr-src/atn/PredicateEvalInfo.h;antlr-src/atn/PredicateTransition.cpp;antlr-src/atn/PredicateTransition.h;antlr-src/atn/PredictionContext.cpp;antlr-src/atn/PredictionContext.h;antlr-src/atn/PredictionMode.cpp;antlr-src/atn/PredictionMode.h;antlr-src/atn/ProfilingATNSimulator.cpp;antlr-src/atn/ProfilingATNSimulator.h;antlr-src/atn/RangeTransition.cpp;antlr-src/atn/RangeTransition.h;antlr-src/atn/RuleStartState.cpp;antlr-src/atn/RuleStartState.h;antlr-src/atn/RuleStopState.cpp;antlr-src/atn/RuleStopState.h;antlr-src/atn/RuleTransition.cpp;antlr-src/atn/RuleTransition.h;antlr-src/atn/SemanticContext.cpp;antlr-src/atn/SemanticContext.h;antlr-src/atn/SetTransition.cpp;antlr-src/atn/SetTransition.h;antlr-src/atn/SingletonPredictionContext.cpp;antlr-src/atn/SingletonPredictionContext.h;antlr-src/atn/StarBlockStartState.cpp;antlr-src/atn/StarBlockStartState.h;antlr-src/atn/StarLoopbackState.cpp;antlr-src/atn/StarLoopbackState.h;antlr-src/atn/StarLoopEntryState.cpp;antlr-src/atn/StarLoopEntryState.h;antlr-src/atn/TokensStartState.cpp;antlr-src/atn/TokensStartState.h;antlr-src/atn/Transition.cpp;antlr-src/atn/Transition.h;antlr-src/atn/WildcardTransition.cpp;antlr-src/atn/WildcardTransition.h;antlr-src/dfa/DFA.cpp;antlr-src/dfa/DFA.h;antlr-src/dfa/DFASerializer.cpp;antlr-src/dfa/DFASerializer.h;antlr-src/dfa/DFAState.cpp;antlr-src/dfa/DFAState.h;antlr-src/dfa/LexerDFASerializer.cpp;antlr-src/dfa/LexerDFASerializer.h;antlr-src/misc/InterpreterDataReader.cpp;antlr-src/misc/InterpreterDataReader.h;antlr-src/misc/Interval.cpp;antlr-src/misc/Interval.h;antlr-src/misc/IntervalSet.cpp;antlr-src/misc/IntervalSet.h;antlr-src/misc/MurmurHash.cpp;antlr-src/misc/MurmurHash.h;antlr-src/misc/Predicate.cpp;antlr-src/misc/Predicate.h;antlr-src/support/Any.cpp;antlr-src/support/Any.h;antlr-src/support/Arrays.cpp;antlr-src/support/Arrays.h;antlr-src/support/BitSet.h;antlr-src/support/CPPUtils.cpp;antlr-src/support/CPPUtils.h;antlr-src/support/Declarations.h;antlr-src/support/guid.cpp;antlr-src/support/guid.h;antlr-src/support/StringUtils.cpp;antlr-src/support/StringUtils.h;antlr-src/tree/AbstractParseTreeVisitor.h;antlr-src/tree/ErrorNode.cpp;antlr-src/tree/ErrorNode.h;antlr-src/tree/ErrorNodeImpl.cpp;antlr-src/tree/ErrorNodeImpl.h;antlr-src/tree/IterativeParseTreeWalker.cpp;antlr-src/tree/IterativeParseTreeWalker.h;antlr-src/tree/ParseTree.cpp;antlr-src/tree/ParseTree.h;antlr-src/tree/ParseTreeListener.cpp;antlr-src/tree/ParseTreeListener.h;antlr-src/tree/ParseTreeProperty.h;antlr-src/tree/ParseTreeVisitor.cpp;antlr-src/tree/ParseTreeVisitor.h;antlr-src/tree/ParseTreeWalker.cpp;antlr-src/tree/ParseTreeWalker.h;antlr-src/tree/TerminalNode.cpp;antlr-src/tree/TerminalNode.h;antlr-src/tree/TerminalNodeImpl.cpp;antlr-src/tree/TerminalNodeImpl.h;antlr-src/tree/Trees.cpp;antlr-src/tree/Trees.h;antlr-src/tree/pattern/Chunk.cpp;antlr-src/tree/pattern/Chunk.h;antlr-src/tree/pattern/ParseTreeMatch.cpp;antlr-src/tree/pattern/ParseTreeMatch.h;antlr-src/tree/pattern/ParseTreePattern.cpp;antlr-src/tree/pattern/ParseTreePattern.h;antlr-src/tree/pattern/ParseTreePatternMatcher.cpp;antlr-src/tree/pattern/ParseTreePatternMatcher.h;antlr-src/tree/pattern/RuleTagToken.cpp;antlr-src/tree/pattern/RuleTagToken.h;antlr-src/tree/pattern/TagChunk.cpp;antlr-src/tree/pattern/TagChunk.h;antlr-src/tree/pattern/TextChunk.cpp;antlr-src/tree/pattern/TextChunk.h;antlr-src/tree/pattern/TokenTagToken.cpp;antlr-src/tree/pattern/TokenTagToken.h;antlr-src/tree/xpath/XPath.cpp;antlr-src/tree/xpath/XPath.h;antlr-src/tree/xpath/XPathElement.cpp;antlr-src/tree/xpath/XPathElement.h;antlr-src/tree/xpath/XPathLexer.cpp;antlr-src/tree/xpath/XPathLexer.g4;antlr-src/tree/xpath/XPathLexer.h;antlr-src/tree/xpath/XPathLexer.tokens;antlr-src/tree/xpath/XPathLexerErrorListener.cpp;antlr-src/tree/xpath/XPathLexerErrorListener.h;antlr-src/tree/xpath/XPathRuleAnywhereElement.cpp;antlr-src/tree/xpath/XPathRuleAnywhereElement.h;antlr-src/tree/xpath/XPathRuleElement.cpp;antlr-src/tree/xpath/XPathRuleElement.h;antlr-src/tree/xpath/XPathTokenAnywhereElement.cpp;antlr-src/tree/xpath/XPathTokenAnywhereElement.h;antlr-src/tree/xpath/XPathTokenElement.cpp;antlr-src/tree/xpath/XPathTokenElement.h;antlr-src/tree/xpath/XPathWildcardAnywhereElement.cpp;antlr-src/tree/xpath/XPathWildcardAnywhereElement.h;antlr-src/tree/xpath/XPathWildcardElement.cpp;antlr-src/tree/xpath/XPathWildcardElement.h;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <TargetName>tsql-checker</TargetName>
+    <TargetExt>.bin</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>src;antlr-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;ANTLR4CPP_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <LibraryDependencies>antlr4-runtime</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
