@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsql-checker", "tsql-checker.vcxproj", "{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsql-checker-windows", "tsql-checker-windows.vcxproj", "{A6633FBC-B96F-48AD-BCA0-A38413F49A3F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsql-checker-linux", "tsql-checker-linux.vcxproj", "{762A4809-E67C-47E3-A400-66925254E7CC}"
 EndProject
