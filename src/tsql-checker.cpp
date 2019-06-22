@@ -48,14 +48,14 @@ void explore_tree(antlr4::tree::ParseTree *ctx)
 {
     if (antlr4::tree::TerminalNodeImpl *ptr = dynamic_cast<antlr4::tree::TerminalNodeImpl*>(ctx))
     {
-        t_sw << ctx->getText() + " ";
+        t_sw << ctx->getText() << std::endl;
     }
 
     if (antlr4::RuleContext *ptr = dynamic_cast<antlr4::RuleContext*>(ctx))
     {
         std::string rule_name = rule_names[ptr->getRuleIndex()];
     
-        g_sw << rule_name + " ";
+        g_sw << rule_name << std::endl;
     }
 
     for (int i = 0; i < ctx->children.size(); i++)
